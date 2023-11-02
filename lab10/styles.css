@@ -1,0 +1,16 @@
+body {font-family: 'Times New Roman', Times, serif;}
+h1, h2 {color: rgb(241, 133, 236);}
+.special{color: purple;}
+.evenrow {background-color: purple;}
+h1 {font-size: 2em;}
+h2 {font-size: 1em;}
+
+.row1 {display: flex; margin: 30px;}
+.row2 {display: flex; margin: 30px;}
+.row1 {padding: 20px; background-color: rgb(157, 198, 233); border-radius: 1em;}
+.row2 {padding: 20px; background-color: rgb(157, 198, 233); border-radius: 1em;}
+
+@media only screen and (max-width: 600px) {
+    nav a {display: 100px;}
+        {display: 100%;}
+    }
