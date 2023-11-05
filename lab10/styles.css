@@ -12,5 +12,5 @@ h2 {font-size: 1em;}
 
 @media only screen and (max-width: 600px) {
     nav a {display: 100px;}
-        {display: 100%;}
+    nav a {display: 100%;}
     }
