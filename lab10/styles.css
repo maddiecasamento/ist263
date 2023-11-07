@@ -11,6 +11,6 @@ h2 {font-size: 1em;}
 .row2 {padding: 20px; background-color: rgb(157, 198, 233); border-radius: 1em;}
 
 @media only screen and (max-width: 600px) {
-    nav a {display: 100px;}
-    nav a {display: 100%;}
+    nav a {display: 100%; display: block;}
+    span {display: none;}
     }
