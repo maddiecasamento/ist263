@@ -10,17 +10,7 @@
             justify-content: center;
             text-align: center;
         }
-        .column {
-            float: left;
-            width: 40%;
-            padding: 5px;
-            text-align: center;
-        }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+        
         .about {
             text-align: center;
         }
@@ -39,8 +29,31 @@
             padding: 5px;
             text-align: center;
         }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
+        
+        .row {
+            display: flex;
+            justify-content: space-around;
         }
+        
+        .intro {
+            display: flex;
+            justify-content: center;
+        }
+
+        .intro p {
+            display: flex;
+            flex-basis: 500px;
+            background-color: #FFFFFF;
+            padding: 2em;
+        }
+
+        body {
+            background: #f4e1d2;
+        }
+
+        .about {
+            background-color: #FFFFFF;
+            padding: 1em;
+        }
+
+
