@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        #modal-close {
+            text-align: right;
+            margin: 0px;
+        }
+        #modal {
+            background: #ffffff;
+            border: 1px solid #000000;
+            width: 200px;
+            padding: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px 100px;
+            display: none;
+        }
+
+        #container {
+            position: relative;
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        a {
+            background: #f2b9c5;
+            padding: 5px;
+        }
+        
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal () {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+    <img src="https://laferger.github.io/ist263/images/cupcakes.jpg" alt="banner of a cupcake">
+    <h1>Desserts</h1>
+
+    <p>Jujubes dessert croissant sesame snaps cotton candy carrot cake. Chocolate cake wafer tart wafer muffin sugar plum marshmallow dessert pastry. Dragée chocolate bar lemon drops macaroon sugar plum pudding sesame snaps wafer sugar plum. Dragée candy candy powder bear claw wafer wafer. Pastry marzipan sugar plum topping marshmallow. Sweet roll gummi bears cake halvah donut jujubes macaroon chocolate bar croissant. Chupa chups marzipan tiramisu apple pie candy donut cheesecake caramels. Icing caramels sweet roll chocolate jelly-o. Soufflé muffin marshmallow sweet roll ice cream jelly wafer donut bear claw. Jujubes lemon drops cookie pie sweet. Cupcake tart tiramisu candy canes chocolate wafer marzipan. Tart toffee donut soufflé macaroon bonbon bonbon pastry.</p>
+<p>Jelly-o jelly-o topping cookie danish gummies tootsie roll. Brownie danish jelly-o gummi bears bear claw lollipop sesame snaps tootsie roll bonbon. Jelly-o tart sweet dessert dessert. Gummies soufflé candy jujubes wafer pastry gingerbread shortbread. Sweet roll powder carrot cake chocolate cake lollipop soufflé toffee cake. Liquorice bear claw halvah sweet bonbon carrot cake. Sesame snaps pie pie gummi bears marzipan. Macaroon dessert chocolate bar brownie chocolate croissant dessert cake. Sesame snaps lemon drops powder marshmallow halvah jelly croissant fruitcake. Ice cream jelly-o gummies dessert gummi bears biscuit toffee. Lollipop chocolate cake cookie croissant sweet roll jujubes muffin. Toffee halvah dragée jujubes cheesecake pudding macaroon bear claw donut. Tart jujubes apple pie donut candy canes lemon drops lemon drops.</p>
+<p>Pastry chocolate bar lemon drops caramels apple pie. Lemon drops sweet roll chocolate gingerbread chupa chups ice cream. Donut muffin dragée gummi bears pastry muffin gummies brownie pudding. Chocolate tootsie roll sesame snaps gummies cake icing powder gummies. Chocolate bar caramels ice cream tiramisu oat cake candy canes gingerbread gummies toffee. Bonbon apple pie fruitcake cake brownie sugar plum macaroon cheesecake croissant. Fruitcake macaroon cake marzipan jelly candy canes biscuit powder. Jelly bear claw sweet liquorice gummies sweet biscuit. Jelly-o chocolate donut topping sweet roll. Wafer chupa chups cheesecake brownie icing cake cupcake. Brownie shortbread marshmallow wafer halvah danish. Pudding dragée toffee chocolate cake wafer pastry.</p>
+<p><a onclick="openModal();">Subscribe to our Newsletter</a></p>
+</div>
+<div id="modal">
+    <p id="modal-close" onClick="closeModal();">X</p>
+    <form>
+        <label for="'name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" class="button" value="Subscribe">
+    </form>
+</div>
+
+</body>
+</html>

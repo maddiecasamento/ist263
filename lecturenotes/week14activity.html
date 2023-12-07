@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 14</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ephesis&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        h1 {font-family: 'Dancing Script', cursive;} 
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal () {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="openModal();" >Join Subscription List</h1>
+    <div id="modal">
+        <p id="modal-close" onClick="closeModal();">X</p>
+    <form>
+        <label for="'name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" class="button" value="Subscribe">
+    </form>
+    </div>
+</body>
+</html>
