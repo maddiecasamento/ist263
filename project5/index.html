@@ -5,60 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
-    
+<script>
+  function showNav() {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+        }
+</script>
 </head>
 <body>
-    <nav class="pages">
+  <div class="firstrow">
+    <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" onclick="showNav();">
+    <p id="close" onclick="hideNav();">X</p>
+</div>
+    <nav class="pages" id="navlinks">
+    <a href="#main" tabindex="1" class="skip"> Skip to Content</a>
         <a href="index.html">Home</a>
         <a href="page2.html">Venice and Florence</a>
         <a href="page3.html">Rome and Sorrento</a>
     </nav>
-    <div class="title">
+    <div class="title1">
         <div>
       <h1> Italia Immersion: Dive into Italian Life </h1>
       </div>
-      <div>
+
+      <div class="intropicture">
       <img src="..//project4/IMG_5067.jpeg" alt="Trevi">
+      
+        <p class="introtext">Over the summer I had the opportunity to travel Italy. During my time there I went to Venice, 
+            Florence, Rome, and Sorrento. From those locations, I adventured off to places such as Tuscany, Ravello, Capri, and Tramonti. In each place I learned about different things from Italian 
+            history. My favorite places were The Vatican, The Duomo di Milano, and the views from the Amalfi Coast. I would love to take the time to show you, my favorites and teach you about what I learned.</p>
       </div>
-      <div class="intro">
-        <p>Over the summer I had the opportunity to travel Italy. During my time there I went to Venice, 
-            Florence, Rome, and Sorrento. In each place I learned about different things from Italian 
-            history. I would love to take the time to show you, my favorites.</p>
-      </div>
-        </div>
     <div class="place">
 
-            <h2>Learn more about Italy!</h2>
+      <br>
+      <br>
+            <h2 id="main">Learn more about Italy!</h2>
     </div>
-            <div class="row">
-                <div class="column">
+    <br>
+    <br>
+            <div class="row1">
+                <div class="column1">
                   <img src="..//project4/Venice_homepage.jpeg" alt="Venice" style="width:60%">
                   <p> <a href="page2.html"> Click here to explore Venice</a></p>
                 </div>
-                <div class="column">
+                <div class="column1">
                   <img src="..//project4/Rome_homepage.jpeg" alt="Rome" style="width:60%">
                   <p> <a href="page3.html"> Click here to explore Rome</a></p>
                 </div>
             </div>
-              <div class="row">
-                <div class="column">
+            <br>
+              <div class="row1">
+                <div class="column1">
                   <img src="..//project4/Florence_homepage.jpeg" alt="Florence" style="width:60%">
                   <p> <a href="page2.html"> Click here to explore Florence</a></p>
                 </div>
-                <div class="column">
+                <div class="column1">
                     <img src="..//project4/sorrento_homepage.jpeg" alt="Sorrento" style="width:60%">
                   <p> <a href="page3.html"> Click here to explore Sorrento</a></p>
                 </div>
             </div>
-          
+          <br>
+          <br>
 
               <div class="about">
                 <div>
                 <p>About me: My name is Maddie Casamento, and I’m a sophomore at Syracuse University. I’m 
                     studying in the School of Information Studies with a design minor in S.I. Newhouse School of 
-                    Public Communications. Traveling is by far one of my favorite things to do. I am so excited to 
-                    get to share this experience, and hopefully teach you more about Italy!</p>
+                    Public Communications. Traveling is by far one of my favorite things to do. I am so greatful to have gotten to go to Italy this past summer. I'm so excited to 
+                    get to share this experience, and hopefully teach you more about Italy and its rich history!</p>
                 </div>
               </div>
+
 </body>
 </html>

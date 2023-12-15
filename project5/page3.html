@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page2</title>
-    
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function showNav() {
+                document.getElementById("navlinks").style.display = "block";
+            }
+            function hideNav () {
+                document.getElementById("navlinks").style.display = "none";
+            }
+    </script>
 </head>
 <body>
-    <nav class="pages">
+  <div class="firstrow">
+    <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" onclick="showNav();">
+    <p id="close" onclick="hideNav();">X</p>
+</div>
+    <nav class="pages" id="navlinks">
+      <a href="#main3" tabindex="1" class="skip"> Skip to Content</a>
         <a href="index.html">Home</a>
         <a href="page2.html">Venice and Florence</a>
         <a href="page3.html">Rome and Sorrento</a>
     </nav>
-    <div class="title">
+    <div class="title3">
         <div>
-      <h1> Explore Rome and Sorrento </h1>
+      <h1 id="main3"> Explore Rome and Sorrento </h1>
       </div>
       </div>
 
-      <div class="row">
-        <div class="column">
-          <img src="..//project 4/vatican inside.jpeg" alt="Vatican" style="width:40%">
-          <img src="..//project 4/Vatican.jpeg" alt="Vatican" style="width:40%">
-          <p>The Rialto Bridge is a famous bridge built in 1588 that replaced previous wood bridges that 
-            occupied the same location. The design of the bridge shows an example of Venetian Renaissance 
-            architecture. The Rialto Bridge is famously one of the most popular tourist places in Venice. It has also 
-            been seen in numerous films located in the heart of Venice.</p>
+      <div class="row3">
+        <div class="column3">
+          <img src="..//project4/vatican inside.jpeg" alt="Vatican" style="width:40%">
+          <img src="..//project4/Vatican.jpeg" alt="Vatican" style="width:40%">
+          <p>On March 17th, 1944 volcano Mount Vesuvius erupted destroying almost all of Pompeii. It buried 
+            the city under a layer of volcanic ash, practically freezing the city until its rediscovery. Pompeii is now 
+            used as an archaeological site where you can view the homes of those who passes in the Eruption along 
+            with many other artifacts found. The volcano is still active but has not erupted since 1944.</p>
         </div>
-        <div class="column">
-          <img src="..//project 4/coloseum.jpeg" alt="Colosseum" style="width:40%">
-          <img src="..//project 4/coloseum2.jpeg" alt="Colosseum" style="width:40%">
-          <p> Doge’s Palace, built in 1424, belonged to former Vatican Republic is one of the most tourist filled 
-            sights in Venice. The ceiling are covered in gold and artwork from Tintoretto’s. The most famous rooms 
-            inside Doge’s palace are The Bridge of Sighs, The Great Council Chamber, and The Golden Staircase.</p>
+        <div class="column3">
+          <img src="..//project4/Pompeii.jpg" alt="Pompeii" style="width:40%">
+          <p>The Colosseum began construction in AD 70-72, and was completed in AD 80. At the time, it was 
+            used for entertainment such as plays of famous battles. Over time, the Colosseum has been damaged 
+            because of fires, and earthquakes. Something cool about the Colosseum is that it had underground 
+            tunnels that were built like a maze, that were concealed beneath the Colosseum. </p>
         </div>
-        <div class="column">
-            <img src="..//project 4/amalfi.jpeg" alt="Amalfi Coast" style="width:40%">
-            <p>The David is one of the most historical statues in Italy. The David originally was built for the roof of 
-                Opera del Duomo, but was the put inside the Galleria dell ’Accademia to protect it from getting 
-                destroyed. This piece was created by Michelangelo between 1501 and 1504 during the Italian 
-                Renaissance. The David represents a hero who defeated Goliath.</p>
+        </div>
+        <div class="row3">
+        <div class="column3">
+            <img src="..//project4/amalfi.jpeg" alt="Amalfi Coast" style="width:40%">
+            <p>The Amalfi Coast is one of the most beautiful coasts in the world. Surrounded by rocky beaches, 
+              and clear water this place can’t be missed! Amalfi is home to many towns such as Positano, Ravello, and 
+              Sorrento. Each town houses different activities to do. Sorrento is known for their lemon groves and the 
+              production of limoncello. Ravello is known for its historic building and beautiful gardens. In Ravello, you 
+              can enjoy many scenic walks with outstanding views. One of the highlights in Ravello is The Terrace of 
+              Infinity, which has one of the best views on the Coast. 
+              </p>
           </div>
-          <div class="column">
-            <img src="..//project 4/Pompeii.jpg" alt="Pompeii" style="width:40%">
-            <img src="..//project 4/pompeii2.jpg" alt="Pompeii" style="width:40%">
-            <p> The Duomo is one of the most attractive landmarks In Florence. It began being built in 1296 and 
-                wasn’t consecrated until 1436. In front of the Duomo is the Baptistry of San Giovanni which is one of the
-                oldest buildings in Florence. It represents artistic and architectural attainment in Italy, with sculptures by
-                Donatello and Andrea del Verrocchio</p>
+          <div class="column3">
+            <img src="..//project4/coloseum.jpeg" alt="Colosseum" style="width:40%">
+          <img src="..//project4/coloseum2.jpeg" alt="Colosseum" style="width:40%">
+            <p>The Vatican, built in 1929, is an independent city-state also known as Vatican City. It takes place 
+              within the city of Rome and is also the smallest independent state in the world. It serves as a spiritual 
+              part of the Roman Catholic Church. When entering certain parts of the Vatican you are not aloud to take
+              pictures or talk. Your shoulders and knees also have to remain covered. Every Sunday, the Pope looks 
+              out his window over Saint Peter’s square and does a blessing for tourists.</p>
           </div>
       </div>
 </body>

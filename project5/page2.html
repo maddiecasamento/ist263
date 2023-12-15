@@ -4,45 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page2</title>
-    
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function showNav() {
+                document.getElementById("navlinks").style.display = "block";
+            }
+            function hideNav () {
+                document.getElementById("navlinks").style.display = "none";
+            }
+    </script>
 </head>
 <body>
-    <nav class="pages">
+  <div class="firstrow">
+    <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" onclick="showNav();">
+    <p id="close" onclick="hideNav();">X</p>
+</div>
+    <nav class="pages" id="navlinks">
+      <a href="#main2" tabindex="1" class="skip"> Skip to Content</a>
         <a href="index.html">Home</a>
         <a href="page2.html">Venice and Florence</a>
         <a href="page3.html">Rome and Sorrento</a>
     </nav>
-    <div class="title">
+    <div class="title2">
         <div>
-      <h1> Explore Venice and Florence </h1>
+      <h1 id="main2"> Explore Venice and Florence </h1>
       </div>
       </div>
 
-      <div class="row">
-        <div class="column">
-          <img src="..//project 4/rialtobridge.jpeg" alt="Rialto Bridge" style="width:40%">
-          <p>The Rialto Bridge is a famous bridge built in 1588 that replaced previous wood bridges that 
-            occupied the same location. The design of the bridge shows an example of Venetian Renaissance 
-            architecture. The Rialto Bridge is famously one of the most popular tourist places in Venice. It has also 
-            been seen in numerous films located in the heart of Venice.</p>
-        </div>
-        <div class="column">
-          <img src="..//project 4/dogespalace.jpeg" alt="Doge's Palace" style="width:40%">
-          <img src="..//project 4/dogespalace2.jpeg" alt="Doge's Palace" style="width:40%">
-          <p> Doge’s Palace, built in 1424, belonged to former Vatican Republic is one of the most tourist filled 
+      <div class="row2">
+        <div class="column2">
+          <img src="..//project4/dogespalace.jpeg" alt="Doge's Palace" style="width:40%">
+          <img src="..//project4/dogespalace2.jpeg" alt="Doge's Palace" style="width:40%">
+          <p>Doge’s Palace, built in 1424, belonged to former Vatican Republic is one of the most tourist filled 
             sights in Venice. The ceiling are covered in gold and artwork from Tintoretto’s. The most famous rooms 
             inside Doge’s palace are The Bridge of Sighs, The Great Council Chamber, and The Golden Staircase.</p>
         </div>
-        <div class="column">
-            <img src="..//project 4/thedavid.jpeg" alt="The David" style="width:40%">
-            <p>The David is one of the most historical statues in Italy. The David originally was built for the roof of 
-                Opera del Duomo, but was the put inside the Galleria dell ’Accademia to protect it from getting 
-                destroyed. This piece was created by Michelangelo between 1501 and 1504 during the Italian 
-                Renaissance. The David represents a hero who defeated Goliath.</p>
+        <div class="column2">
+          <img src="..//project4/thedavid.jpeg" alt="The David" style="width:40%">
+          <p> The David is one of the most historical statues in Italy. The David originally was built for the roof of 
+            Opera del Duomo, but was the put inside the Galleria dell ’Accademia to protect it from getting 
+            destroyed. This piece was created by Michelangelo between 1501 and 1504 during the Italian 
+            Renaissance. The David represents a hero who defeated Goliath.</p>
+        </div>
+        </div>
+        <div class="row2">
+        <div class="column2">
+          <img src="..//project4/rialtobridge.jpeg" alt="Rialto Bridge" style="width:40%">
+            <p>The Rialto Bridge is a famous bridge built in 1588 that replaced previous wood bridges that 
+              occupied the same location. The design of the bridge shows an example of Venetian Renaissance 
+              architecture. The Rialto Bridge is famously one of the most popular tourist places in Venice. It has also 
+              been seen in numerous films located in the heart of Venice.</p>
           </div>
-          <div class="column">
-            <img src="..//project 4/duomo.jpeg" alt="The Duomo" style="width:40%">
-            <img src="..//project 4/duomo2.jpeg" alt="The Duomo" style="width:40%">
+          <div class="column2">
+            <img src="..//project4/duomo.jpeg" alt="The Duomo" style="width:40%">
+            <img src="..//project4/duomo2.jpeg" alt="The Duomo" style="width:40%">
             <p> The Duomo is one of the most attractive landmarks In Florence. It began being built in 1296 and 
                 wasn’t consecrated until 1436. In front of the Duomo is the Baptistry of San Giovanni which is one of the
                 oldest buildings in Florence. It represents artistic and architectural attainment in Italy, with sculptures by
