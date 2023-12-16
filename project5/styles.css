@@ -144,6 +144,10 @@
     
 }
 
+        .img {
+            width: 50%;
+        }
+
         .title2 {
             justify-content: center;
             text-align: center;
@@ -190,7 +194,7 @@
     }
 
     @media only screen and (max-width: 500px) {
-        .row3, .column3 {flex-direction: column; align-items: center;}
+        .row3, .colum3 {flex-direction: column; align-items: center;}
         
     }
 
